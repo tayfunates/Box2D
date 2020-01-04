@@ -42,7 +42,22 @@ project 'Testbed'
 	kind 'ConsoleApp'
 	debugdir 'Testbed'
 	warnings 'Default'
-	includedirs { '.' }
+
+	linkoptions {
+		"-lavformat", "-lavcodec",
+		"-lswscale", "-lavutil", "-lswresample", "-lpng",
+		"-llzma","-lrt"
+	}
+
+	includedirs 
+	{
+		'.', 
+		'Testbed/Framework/', 
+		'Testbed/Tests/SVQA/*',
+		'Testbed/Tests/SVQA/', 
+		'thirdparty/',
+		'/usr/include'
+	}
 
 	files
 	{
@@ -61,12 +76,10 @@ project 'Testbed'
 		'Testbed/glfw/window.c',
 		'Testbed/imgui/*',
 		'Testbed/Tests/SVQA/*',
-		'Testbed/Tests/SVQA/FixedPulley/*',
-		'Testbed/Tests/SVQA/ObstructedPath/*',
-		'Testbed/Tests/SVQA/PendulumObstacles/*',
-		'Testbed/Tests/SVQA/RemoveObject/*'
-		
+		'Testbed/Tests/SVQA/*/*',
 	}
+
+	excludes { 'Testbed/Framework/Main.cpp' }
 
     filter { 'system:windows' }
     	files

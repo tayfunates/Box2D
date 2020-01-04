@@ -14,6 +14,10 @@
 #endif
 #include <png.h>
 
+#ifdef __linux__
+#include <cstring>
+#endif
+
 bool loadPngImage(const char *name, int &outWidth, int &outHeight, bool &outHasAlpha, GLubyte **outData) {
     png_structp png_ptr;
     png_infop info_ptr;
