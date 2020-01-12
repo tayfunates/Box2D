@@ -111,6 +111,8 @@
 		7C94932E238C56AF00BE6CE3 /* PendulumObstaclesSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PendulumObstaclesSettings.h; sourceTree = "<group>"; };
 		7C94932F238C570E00BE6CE3 /* PendulumObstaclesSimulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PendulumObstaclesSimulation.h; sourceTree = "<group>"; };
 		7CC417F1234A0AB200CD88E7 /* SimulationMaterial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationMaterial.cpp; sourceTree = "<group>"; };
+		7CC610EB23C9E62300BEFFF3 /* MultiplePendulumsSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiplePendulumsSettings.h; sourceTree = "<group>"; };
+		7CC610EC23C9E62E00BEFFF3 /* MultiplePendulumsSimulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiplePendulumsSimulation.h; sourceTree = "<group>"; };
 		7CC77DC323C7A70200BFFAFE /* ObstructionDemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObstructionDemoSettings.h; sourceTree = "<group>"; };
 		7CC77DC423C7A70200BFFAFE /* ObstructionDemoSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObstructionDemoSimulation.h; sourceTree = "<group>"; };
 		7CC77DC623C7A71700BFFAFE /* Scene1Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene1Settings.h; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				7C94932D238C566F00BE6CE3 /* PendulumObstacles */,
 				7C52719F238A800800816DFC /* ObstructedPath */,
 				7C92AD26234E37C40074BFB6 /* RemoveObject */,
+				7CC610EA23C9E60200BEFFF3 /* MultiplePendulums */,
 				7C5271A3238A88C500816DFC /* SimulationID.h */,
 			);
 			name = SVQA;
@@ -276,6 +279,15 @@
 			);
 			name = Textures;
 			path = ../Testbed/Data/Textures;
+			sourceTree = "<group>";
+		};
+		7CC610EA23C9E60200BEFFF3 /* MultiplePendulums */ = {
+			isa = PBXGroup;
+			children = (
+				7CC610EB23C9E62300BEFFF3 /* MultiplePendulumsSettings.h */,
+				7CC610EC23C9E62E00BEFFF3 /* MultiplePendulumsSimulation.h */,
+			);
+			path = MultiplePendulums;
 			sourceTree = "<group>";
 		};
 		7CC77DC223C7A70200BFFAFE /* ObstructionDemo */ = {
